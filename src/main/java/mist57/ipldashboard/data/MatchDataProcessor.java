@@ -24,6 +24,7 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
         match.setVenue(matchInput.getVenue());
 
 
+
         String firstInningsTeam, secondInningsTeam;
         if("bat".equals(matchInput.getToss_decision())){
             firstInningsTeam=matchInput.getToss_winner();
@@ -40,6 +41,7 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
 
         match.setTossWinner(matchInput.getToss_winner());
         match.setTossDecision(matchInput.getToss_decision());
+        match.setMatchWinner(matchInput.getWinner());
         match.setResult(matchInput.getResult());
         match.setResultMargin(matchInput.getResult_margin());
         match.setUmpire1(matchInput.getUmpire1());
