@@ -1,8 +1,15 @@
 package mist57.ipldashboard.model;
 
-import java.time.LocalDate;
 
+
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.time.LocalDate;
+@Entity
 public class Match {
+
+    @Id
     private long id;
     private String city;
     private LocalDate date;
