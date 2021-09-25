@@ -22,6 +22,7 @@ public class Team {
     private List<Match> matches;
 
 
+
     public long getId() {
         return id;
     }
@@ -63,9 +64,6 @@ public class Team {
     public void setMatches(List<Match> matches) {
         this.matches = matches;
     }
-
-
-
 
 
 
